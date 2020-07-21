@@ -3,8 +3,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
-
-
 from time import sleep
 
 
@@ -31,7 +29,7 @@ def main():
     sleep(3)
     browser.execute_script('window.scrollTo(0, 0)') # Переход на начало страницы, исполняя JS
     sleep(2) 
-    browser.find_element_by_xpath('//*[@id="header"]/div[1]/div/div/div[1]/div[1]').click()
+    browser.find_element_by_xpath('//*[@id="header"]/div[1]/div/div/div[1]/div[1]').click() # Клик по логотипу
     sleep(2)   
     browser.quit()
 
